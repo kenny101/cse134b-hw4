@@ -97,6 +97,6 @@ const promptHandler = {
   },
 };
 
-alertsHandler.addClickEven ();
+alertsHandler.addClickEvent();
 confirmHandler.addClickEvent();
 promptHandler.addClickEvent();
