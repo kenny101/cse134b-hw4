@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="./public/favicon.ico" sizes="any">
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
+    <link rel="manifest" href="./public/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a889db55b7.js" crossorigin="anonymous"></script>
+    <link href="./css/home-styles.css" rel="stylesheet" />
+    <link href="./css/navbar.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <div class="blob-bg">
+        <div class="blob"></div>
+    </div>
+    <nav id="main-nav">
+        <span class="left-links"> Portfolio Page </span>
+        <nav id="centered-links">
+            <a href="./index.html">Home</a>
+            <a href="./Browse.html">Grid Experiment</a>
+        </nav>
+        <!-- <button class="right-links">Get Started</button> -->
+    </nav>
+
+    <div class="login-modal">
+        <span class="close">&times;</span>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <p class="btn-text"><a href="#">Coninue with Google</a></p>
+            <input type="submit" value="Sign in">
+        </form>
+    </div>
+
+    <main>
+        <header>
+            <h1>Welcome to my Portfolio!</h1>
+        </header>
+
+        <h2>Here are some projects I've worked on!</h2>
+
+        <section class="container">
+            <figure>
+                <img src="./images/cbp-visualizer-app.png" />
+                <figcaption><a href="https://github.com/kenny101/cbp-visualizer">CBP Visualizer App: a MERN stack app
+                        for researchers to display employment data</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/rubiks-sim-app.png">
+                <figcaption><a href="https://github.com/kenny101/rubiks-cube-simulator">Simulate solving a Rubiks Cube
+                        on the Web!</a></figcaption>
+            </figure>
+            <figure>
+                <img src="./images/tic-tac-toe-app.png">
+                <figcaption><a href="https://github.com/kenny101/tic-tac-toe">Tic-Tac-Toe With React JS</a></figcaption>
+            </figure>
+            <figure>
+                <img src="./images/recipes-app.png">
+                <figcaption><a href="https://github.com/kenny101/recipes-database">Recipes Database: A Web App to search
+                        for Recipes using Ingredients!</a></figcaption>
+            </figure>
+            <figure>
+                <img
+                    src="https://github.com/cse110-sp21-group9/cse110-sp21-group9/raw/main/specs/interface/final-screenshots/homepage.PNG">
+                <figcaption><a href="https://github.com/kenny101/recipes-database">Bujo Studio: A bullet journal web app
+                        developed with my CSE110 Team!</a></figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>

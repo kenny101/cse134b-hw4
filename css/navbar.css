@@ -1,0 +1,142 @@
+:root {
+    --bg-black: #121212;
+    --border-black: rgba(18, 18, 18, 0.14);
+    --white-text: rgba(255, 255, 255, 0.87);
+    --blur-black: rgba(18, 18, 18, 0.89);
+}
+
+@font-face {
+    font-family: Calcutta-Medium;
+    src: url(Calcutta-Medium.otf);
+}
+
+@font-face {
+    font-family: Calcutta-SemiBold;
+    src: url(Calcutta-SemiBold.otf);
+}
+
+* {
+    font-family: Calcutta-Medium, sans-serif;
+    background-color: var(--bg-black);
+    color: var(--white-text);
+}
+
+.left-links,
+.right-links {
+    background-color: transparent;
+}
+
+.left-links {
+    font-family: Calcutta-SemiBold;
+    font-size: 1.5em;
+    margin: 20px;
+    margin-top: 15px;
+}
+
+.right-links a {
+    background-color: inherit;
+}
+
+#main-nav>button {
+    background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);    
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px var(--bg-black);
+    border-radius: 10px;
+    width: 100px;
+    height: 70%;
+    margin: 5px;
+    margin-right: 20px;
+    justify-self: end;
+    border-color: var(--bg-black);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+}
+
+#main-nav>button:hover {
+    background-position: right center; 
+    color: black;
+    text-decoration: none;
+}
+
+.login-modal {
+    display: none;
+}
+
+#centered-links>a {
+    margin: 10px;
+    background-color: inherit;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 lightblue;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#centered-links>a:hover {
+    box-shadow: inset 110px 0 0 0 lightcoral;
+    color: white;
+}
+
+#main-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+        "left center right";
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    /* From https://css.glass */
+    background: var(--blur-black);
+    box-shadow: 0 4px 30px var(--blur-black);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid var(--blur-black);
+}
+
+#centered-links {
+    margin: 10px;
+    margin-top: 15px;
+    justify-self: center;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .left-links {
+        font-family: Calcutta-SemiBold;
+        font-size: 15px;
+        margin: 20px;
+        margin-top: 15px;
+    }
+
+    #centered-links>a {
+        margin: 2px;
+        background-color: inherit;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        box-shadow: inset 0 0 0 0 lightblue;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    #main-nav>button {
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);    
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px var(--bg-black);
+        border-radius: 10px;
+        width: 80px;
+        height: 70%;
+        margin: 5px;
+        font-size: 10px;
+        margin-right: 20px;
+        justify-self: end;
+        border-color: var(--bg-black);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0px;
+    }
+}

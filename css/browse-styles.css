@@ -1,0 +1,109 @@
+:root {
+    --bg-black: #121212;
+    --border-black: rgba(18, 18, 18, 0.14);
+    --white-text: rgba(255, 255, 255, 0.87);
+    --blur-black: rgba(18, 18, 18, 0.89);
+}
+
+@font-face {
+    font-family: Calcutta-Medium;
+    src: url(Calcutta-Medium.otf);
+}
+
+@font-face {
+    font-family: Calcutta-SemiBold;
+    src: url(Calcutta-SemiBold.otf);
+}
+
+* {
+    font-family: Calcutta-Medium, sans-serif;
+    background-color: var(--bg-black);
+    color: var(--white-text);
+}
+
+.login-modal {
+    display: none;
+}
+
+form {
+    margin: 70px;
+    align-content: center;
+}
+
+form {
+    margin: 70px;
+    align-content: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+figure>img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+figure a {
+    color: white;
+    /* text-decoration: none; */
+    background-color: var(--blur-black);
+    font-size: .8rem;
+
+}
+
+figcaption {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: transparent;
+    padding: .2em .5em;
+    justify-self: start;
+}
+
+.container {
+    margin-top: 50px;
+    column-count: 4;
+    column-gap: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin-top: 50px;
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    img {
+        max-width: 50%;
+        display: block;
+        margin: 32px;
+    }
+}
+
+form {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 50px;
+        column-count: 1;
+        column-gap: 10px;
+    }
+
+    img {
+        max-width: 80%;
+        display: block;
+        margin: 32px;
+    }
+}

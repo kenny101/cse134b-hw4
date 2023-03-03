@@ -1,0 +1,60 @@
+:root {
+    --bg-black: #121212;
+    --border-black: rgba(18, 18, 18, 0.14);
+    --white-text: rgba(255, 255, 255, 0.87);
+    --blur-black: rgba(18, 18, 18, 0.89);
+}
+
+article {
+    /* color: red; */
+    background-color: lightgray;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+#add-btn {
+    font-size: larger;
+    padding: 12px;
+    margin: 12px;
+}
+
+header {
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+article:hover {
+    background-color: lightblue;
+}
+
+dialog {
+    border-radius: 12px;
+}
+
+dialog>form>label {
+    font-weight: bold;
+}
+
+.material-symbols-outlined:hover {
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48;
+    display: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+time {
+    font-weight: bold;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img World</title>
+    <link rel="icon" href="../public/favicon.ico" sizes="any">
+    <link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
+    <link rel="manifest" href="../public/site.webmanifest">
+    
+
+    <style>
+        body {
+            background-color: azure;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Browse.html">Browse</a>
+        <a class="active">Experimental</a>
+        <button type="button">Get Started</button>
+    </nav>
+
+
+    <div class="login-modal">
+        <span class="close">&times;</span>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <p class="btn-text"><a href="#">Coninue with Google</a></p>
+            <input type="submit" value="Sign in">
+        </form>
+    </div>
+
+    <main>
+        <hr>
+        <section>
+            <h3>The &lt;h#&gt; tags:</h3>
+            <h1>Hello I am h1</h1>
+            <h2>Hello I am h2</h2>
+            <h3>Hello I am h3</h3>
+            <h4>Hello I am h4</h4>
+            <h5>Hello I am h5</h5>
+            <h6>Hello I am h6</h6>
+        </section>
+        <hr>
+        <section>
+            <h3>The &lt;abbr&gt; tag:</h3>
+            <p><em>note that in order to render special html characters, we use a different syntax to express it.</em>
+            </p>
+            <abbr title="World Wide Web Consortium">W3C</abbr> was founded in 1994 and helps improve the web by setting
+            certain
+            standards to make the web more consistent and user friendly.
+        </section>
+        <hr>
+        <section>
+            <h3>The &lt;article&gt; tag: </h3>
+            <ul>
+                <li>is similar to a section tag but instead encapsulates content that is self-contained</li>
+                <li>could be a blog post or article</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h3>The &lt;aside&gt; tag: </h3>
+            <aside>
+                Good for if you want content separate from main content to be noted but on the side! It has nothing
+                special to render but combined with css, it can be a sidebar.
+            </aside>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;select&gt; and &lt;option&gt; tags: </h3>
+            <label for="pies">Pick Favorite Pie:</label>
+            <select name="pies" id="pies">
+                <option value="Apple">Apple</option>
+                <option value="Peach Cobbler">Peach Cobbler</option>
+                <option value="BlueBerry">BlueBerry</option>
+                <option value="Mango">Mango</option>
+            </select>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;fieldset&gt; tag combined with &lt;legend&gt; tag </h3>
+            <form>
+                <fieldset>
+                    <legend>Student Info:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="pid">Student PID:</label>
+                    <input type="text" id="pid" name="pid"><br><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;fieldset&gt; tag: </h3>
+            <ul>
+                <li>Allows for like option but allows for autocomplete!</li>
+            </ul>
+            <form>
+                <label for="fruit">Input a fruit from the datalist:</label>
+                <input list="fruits" name="fruit" id="fruit">
+                <datalist id="fruits">
+                    <option value="Apple">
+                    <option value="Banana">
+                    <option value="Peach">
+                    <option value="Mango">
+                    <option value="Orange">
+                </datalist>
+                <input type="submit">
+            </form>
+        </section>
+        <hr>
+
+
+        <section>
+            <h3>Types of text in html </h3>
+            <ol>
+                <li><b>bold</b></li>
+                <li><i>italicized</i></li>
+                <li><u>underlined</u></li>
+                <li><s>crossed out</s></li>
+                <li> <ruby>
+                        你 <rt> Nǐ </rt>
+                    </ruby>
+                    <ruby>
+                        好 <rt> hǎo </rt>
+                    </ruby>
+                </li>
+                <li>It is <time>12:00</time>AM</li>
+                <li><code>print("hello world!"")</code></li>
+                <li><small>I am small</small></li>
+            </ol>
+        </section>
+        <hr>
+
+
+        <section>
+            <h3>The &lt;video&gt; tag: </h3>
+            <video width="320" height="240" controls>
+                <source src="https://github.com/kenny101/cse134b-HW2/blob/main/public/video.webm?raw=true" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;audio&gt; tag: </h3>
+            <audio controls autoplay loop>
+                <source src="https://github.com/kenny101/cse134b-HW2/blob/main/public/lofi.mp3?raw=true" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;picture&gt; tag: </h3>
+            <p>If you zoom in enough, the image will change because we added a feature to the image using the
+                &lt;picture&gt; tag!</p>
+            <picture>
+                <source media="(min-width:650px)" srcset="https://github.com/kenny101/cse134b-HW2/blob/main/images/image2.jpeg?raw=true">
+                <source media="(min-width:465px)" srcset="https://github.com/kenny101/cse134b-HW2/blob/main/images/image3.jpeg?raw=true">
+                <img src="https://github.com/kenny101/cse134b-HW2/blob/main/images/image3.jpeg?raw=true" alt="ai generated image" style="width:auto;">
+            </picture>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;pre&gt; tag: </h3>
+            <pre>
+                line breaks and      spaces
+                are okay here   !
+                
+            </pre>
+        </section>
+        <hr>
+
+
+        <section>
+            <h3>The &lt;iframe&gt; tag used on google calendar: </h3>
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%2333B679"
+                style="border:solid 1px #777" width="800" height="600"></iframe>
+        </section>
+        <hr>
+
+
+        <section>
+            <h3>The &lt;canvas&gt; tag: </h3>
+            <canvas id="myCanvas" width="500" height="100">
+                Your browser does not support the HTML canvas tag.</canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                c.getContext("2d").fillText("I am a canvas", 100, 50);
+            </script>
+        </section>
+        <hr>
+
+
+        <section>
+            <h3>The &lt;svg&gt; tag: </h3>
+            <svg viewBox="0 0 400 400">
+                <circle cx="200" cy="200" r="190" fill="none" stroke="black" />
+            </svg>
+        </section>
+        <hr>
+
+
+        <section>
+            <h3>The &lt;optgroup&gt; tag: </h3>
+            <form>
+                <label for="pies">Choose a pie flavor:</label>
+                <select name="pies">
+                    <optgroup label="popular pies">
+                        <option value="Apple">Apple</option>
+                        <option value="BlueBerry">BlueBerry</option>
+                    </optgroup>
+                    <optgroup label="special pies">
+                        <option value="strawberry">strawberry</option>
+                        <option value="pineapple">pineapple</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;textarea&gt; tag: </h3>
+            <form>
+                <p><label>How do you feel about apple pie?</label></p>
+                <textarea>I think apple pie is great!</textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;details&gt; tag: </h3>
+            <details>
+                <summary>Apple pie</summary>
+                <img src="https://github.com/kenny101/cse134b-HW2/blob/main/images/apple-pie.jpeg?raw=true" alt="ai generated image of apple pie">
+            </details>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;template&gt; tag: </h3>
+            <p>We need some javascript to resuse this! </p>
+            <template>
+                <h2>apple pie</h2>
+                <img src="https://github.com/kenny101/cse134b-HW2/blob/main/images/apple-pie.jpeg?raw=true">
+            </template>
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;th&gt; tag being used with caption and colgroups:</h3>
+
+            <table>
+                <caption>Pie Prices:</caption>
+                <tr>
+                    <th>Pies:</th>
+                    <th>Size</th>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>Small</td>
+                </tr>
+                <tr>
+                    <td>BlueBerry</td>
+                    <td>XL</td>
+                </tr>
+            </table>
+
+            <table>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <th>Pies:</th>
+                    <th>Size</th>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>Small</td>
+                </tr>
+                <tr>
+                    <td>BlueBerry</td>
+                    <td>XL</td>
+                </tr>
+            </table>
+
+        </section>
+        <hr>
+
+        <section>
+            <h3>The &lt;figure&gt; and &lt;figcaption&gt;tag: </h3>
+            <figure>
+                <img src="https://github.com/kenny101/cse134b-HW2/blob/main/images/apple-pie.jpeg?raw=true" alt="ai generated image of apple pie">
+                <figcaption>Figure: Apple pie</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+
+    </main>
+
+
+    <footer>
+        <p>Author: Kenny Chan<br>
+    </footer>
+
+
+</body>
+
+</html>
