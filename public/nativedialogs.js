@@ -50,13 +50,14 @@ const promptHandler = {
   doc: document.getElementById("prompt-btn"),
   addClickEvent() {
     this.doc.addEventListener("click", () => {
+      console.log("clicked")
       const result = String(prompt("What is your name?"));
       dialogHander.addStyle();
       if (result == "" || result == null) {
         dialogHander.setText(`User didn't input anything`);
       } else {
-        dialogHander.doc.innerHTML = `Prompt result: ${result}`;
-        // dialogHander.setText(`Prompt result: ${result}`); // (Safer way)
+        // dialogHander.doc.innerHTML = `Prompt result: ${result}`;
+        dialogHander.setText(`Prompt result: ${result}`); // (Safer way)
       }
     });
   },
@@ -72,8 +73,7 @@ const saferPromptHandler = {
       if (result == "" || result == null) {
         dialogHander.setText(`User didn't input anything`);
       } else {
-        dialogHander.doc.innerHTML = `Prompt result: ${result}`;
-        // dialogHander.setText(`Prompt result: ${result}`); // (Safer way)
+        dialogHander.setText(`Prompt result: ${result}`); // (Safer way)
       }
     });
   },

@@ -1,8 +1,6 @@
 ## Changes made to my website
-- Added favicon
-- Changed the over
 - Previous website was not really a portfolio website, I added portfolio homepage and changed the image gallery to be an experiments page
-- Homepage contains resumt items of github projects I have worked on
+- Homepage contains resume items of github projects I have worked on
 - Contents of the homepage projects replicate the implementations used in the "Grid experiment tab"
 
 ## 3rd Party JavaScript Add-On: 
